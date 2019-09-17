@@ -21,9 +21,9 @@ class: title-slide, middle
 # Touchdown your research
 
 .instructors[
-  **QCBS R Workshop** 
-     
-  Marie-Hélène Brice, Kevin Cazelles,   
+  **QCBS R Workshop**
+
+  Marie-Hélène Brice, Kevin Cazelles,
   David Beauchesne & Steve Vissault
 ]
 
@@ -42,9 +42,9 @@ options(htmltools.dir.version = FALSE)
 ---
 class: inverse, center, middle
 
-# RMarkdown 
+# RMarkdown
 
-<html><div style='float:left'></div><hr color='#ffdd55' size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' size=1px width=720px></html>
 
 Structure
 
@@ -56,13 +56,13 @@ Structure
 ## Changing font sizes
 
 This css comes with some classes that let you change the font-size of the coding font:
- 
+
 .code60[
 ```{r, eval = FALSE}
 .code60[some R code with 60 % font size]
 ```
 ]
- 
+
 .code100[
 ```{r, eval = FALSE}
 .code100[some R code with 100 % font size]
@@ -76,7 +76,7 @@ So powerful!
 ]
 
 ... or `.font150[]`
- 
+
 .font150[
 So powerful!
 ]
@@ -87,15 +87,15 @@ So powerful!
 
 ## Inline code highlighting
 
-I've set the look of inline code highlighting similar to the one used at `Github` with a grey background. 
+I've set the look of inline code highlighting similar to the one used at `Github` with a grey background.
 
 ---
 
 # Differences to Metropolis Beamer
-  
-* No support of incremental orange break lines in break slides 
 
-* Style of slide numbering 
+* No support of incremental orange break lines in break slides
+
+* Style of slide numbering
 
 ---
 
@@ -206,13 +206,13 @@ This is normal size ( $\LaTeX$-friendly terms)
 
 .blue[blue]
 
-.green[green], 
-.yellow[yellow], 
-.orange[orange], 
-.purple[purple], 
+.green[green],
+.yellow[yellow],
+.orange[orange],
+.purple[purple],
 .gray[gray or grey]
 
-You can also use `.bold[]` or `.bolder[]` to emphasize text 
+You can also use `.bold[]` or `.bolder[]` to emphasize text
 
 This is .bold[bold], this is .bolder[bolder] and this is regular markdown **double-star bold** (visible differences depend on the font)
 
@@ -275,7 +275,7 @@ Add `.blur`
 ```{r echo=FALSE, out.width="80%"}
 knitr::include_graphics("https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Denmark-Copenhagen-587892190-SeanPavonePhoto-copy.jpg")
 ```
-] 
+]
 ]
 
 ---
@@ -316,5 +316,145 @@ Add `.shadow`
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("https://beautifulenvironments.files.wordpress.com/2017/12/twinkly-lights.jpg")
 ```
-] 
 ]
+]
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Presentation formats
+
+
+---
+
+# Motivation
+
+1. Create a presentation :microphone:
+  - for a tutorial
+  - for conference
+
+2. Use Markdown to quickly format your content
+
+3. :Insert code examples :gear:
+
+4. Insert your R figures :bar_chart:
+
+
+---
+
+# Examples
+
+Several [formats](https://rmarkdown.rstudio.com/formats.html) available
+
+## [ioslides](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html)
+
+```
+---
+title: "ResearchDown"
+author: Liam Beauchesne
+output: ioslides_presentation
+---
+```
+
+## [Slidy](https://bookdown.org/yihui/rmarkdown/slidy-presentation.html)
+
+```
+---
+title: "ResearchDown"
+author: Liam Beauchesne
+output: slidy_presentation
+---
+```
+
+---
+
+# Usage
+
+## [Beamer](https://bookdown.org/yihui/rmarkdown/beamer-presentation.html)
+
+```
+---
+title: "ResearchDown"
+author: Liam Beauchesne
+output: beamer_presentation
+---
+```
+
+## [PowerPoint](https://bookdown.org/yihui/rmarkdown/powerpoint-presentation.html)
+
+
+```
+---
+title: "Habits"
+author: John Doe
+date: March 22, 2005
+output: powerpoint_presentation
+---
+```
+
+---
+
+# Usage
+
+## [xaringan](https://slides.yihui.name/xaringan/#1)
+
+```r
+install.packages("xaringan")
+```
+
+```
+---
+title: "Talk"
+subtitle: "Symposium"
+author: "Liam Beauchesne"
+output:
+  xaringan::moon_reader:
+---
+```
+
+
+---
+
+# Resources
+
+<br>
+
+### [1. QCBS R workshops](https://qcbsrworkshops.github.io/)
+### [2. ioslides](https://kevcaz.github.io/pres_Rmarkdown_fr/#1)
+### [3. xaringan](https://slides.yihui.name/xaringan/#1)
+
+
+---
+
+# Get started
+
+## [xaringan](https://slides.yihui.name/xaringan/#1)
+
+
+```
+---
+title: "Workshop 1: Introduction to R"
+subtitle: "QCBS R Workshop Series"
+author: "Liam Beauchesne"
+output:
+  xaringan::moon_reader:
+    includes:
+      in_header: qcbsR-header.html
+    lib_dir: assets
+    seal: true
+    css: ["default", "qcbsR.css", "qcbsR-fonts.css"]
+    nature:
+
+# Slides 1
+
+---
+
+# Slides 2
+
+```
+
+
