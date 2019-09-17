@@ -143,9 +143,9 @@ coef(summary(fit))
 ```
 
 ```
-##               Estimate Std. Error   t value     Pr(&gt;|t|)
-## (Intercept) -17.579095  6.7584402 -2.601058 1.231882e-02
-## speed         3.932409  0.4155128  9.463990 1.489836e-12
+##               Estimate Std. Error   t value             Pr(&gt;|t|)
+## (Intercept) -17.579095  6.7584402 -2.601058 0.012318816153808828
+## speed         3.932409  0.4155128  9.463990 0.000000000001489836
 ```
 
 ---
@@ -369,9 +369,108 @@ Add `.shadow`
 ]
 ]
 
+---
+
+# Bookdown - Motivation
+
+.pull-left[
+- Producing more complicated documents
+- Automatic number and cross-referencing
+  - Figures
+  - Tables
+  - Equations
+  - Theorems
+  - Custom headers
+- Figure formatting and placement
+- Customized visuals
+]
+
+.pull-right[
+&lt;img src="https://bookdown.org/yihui/bookdown/images/logo.png" width="35%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Bookdown - Examples
+
+- Minimal: https://bookdown.org/yihui/bookdown-demo/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Examples
+
+- Tufte style: https://bookdown.org/yihui/bookdown-demo3/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo3/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Usage
+
+- Collection of `.Rmd` files
+  - Individual chapter for each file
+  - Chapter title defined by first-level heading `#`
+  - Usual Rmarkdown syntax
+  - Rendered by filename order by default
+
+.pull-left[
+- `01-Introduction.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `02-Chapter1.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `03-Conclusion.Rmd`
+]
+
+.pull-right[
+
+```r
+# Introduction
+This is the introduction
+```
 
 
+```r
+# Chapter 1
+This is the Chapter 1
+```
 
+
+```r
+# Conclusion
+This is the conclusion
+```
+]
+
+---
+
+# Bookdown - Usage
+
+- Outputs options
+  - `HTML`
+  - `pdf`
+  - `E-Books`
+
+
+---
+
+# Bookdown - Getting started
+
+&lt;iframe width="100%" height="90%"
+src="https://bookdown.org/yihui/bookdown/get-started.html"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Resources
+
+- Github repository: https://github.com/rstudio/bookdown
+- Bookdown book: https://bookdown.org/yihui/bookdown/
 
 ---
 class: inverse, center, middle
@@ -476,9 +575,6 @@ output:
 ### [1. QCBS R workshops](https://qcbsrworkshops.github.io/)
 ### [2. ioslides](https://kevcaz.github.io/pres_Rmarkdown_fr/#1)
 ### [3. xaringan](https://slides.yihui.name/xaringan/#1)
-
-
----
 
 # Get started
 
