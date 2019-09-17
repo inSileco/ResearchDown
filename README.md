@@ -28,3 +28,4 @@ Le processus de publication avec révision par les pairs est conçu par et pour 
 - RMarkdown https://rmd4medicine.netlify.com/materials/ :uk:
 - Rmarkdown https://kevcaz.github.io/pres_Rmarkdown_fr/#1 :fr:
 - Markdown https://mccannlab.ca/Tutorials/markdown/#1 :uk:
+- RMarkdown https://bookdown.org/yihui/rmarkdown/ :uk:
