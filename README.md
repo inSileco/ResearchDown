@@ -6,7 +6,7 @@ Publication per peer-review process is made by and for scientists. It is also a 
 
 ## FR- Touchdown your research
 
-Le processus de publication avec révision par les pairs est conçu par et pour les scientifiques. C'est également un canal de communication lent et fermé qui limite notre capacité à atteindre efficacement une large audience en dehors du monde universitaire. Rmarkdown peut nous aider à résoudre ce problème. Rmarkdown est l'association de R et d'un langage à balisage léger appelé *markdown*. Au cours de cet atelier, nous allons apprendre à utiliser ce langage et à générer des documents HTML pouvant être convertis en blogs, cahiers, affiches et documentations. Nous apprendrons ensuite comment déployer ces documents HTML sur Github (gratuitement!) afin d'exposer des idées, de nouvelles méthodes ou des compétences personnelles et ainsi d'étendre votre Curriculum vitae au web.
+Le processus de publication avec révision par les pairs est conçu par et pour les scientifiques. C'est également un canal de communication lent et fermé qui limite notre capacité à atteindre efficacement une large audience en dehors du monde universitaire. Rmarkdown peut nous aider à résoudre ce problème. Rmarkdown est l'association de R et d'un langage à balisage léger appelé *markdown*. Au cours de cet atelier, nous allons apprendre à utiliser ce langage et à générer des documents HTML pouvant être convertis en blogs, cahiers, affiches et documentations. Nous apprendrons ensuite comment déployer ces documents html sur Github (gratuitement!) afin d'exposer des idées, de nouvelles méthodes ou des compétences personnelles et ainsi d'étendre votre Curriculum vitae au web.
 
 ### Duration: 2 hours
 
