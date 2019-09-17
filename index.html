@@ -20,9 +20,9 @@ class: title-slide, middle
 # Touchdown your research
 
 .instructors[
-  **QCBS R Workshop** 
-     
-  Marie-Hélène Brice, Kevin Cazelles,   
+  **QCBS R Workshop**
+
+  Marie-Hélène Brice, Kevin Cazelles,
   David Beauchesne &amp; Steve Vissault
 ]
 
@@ -39,9 +39,9 @@ class: title-slide, middle
 ---
 class: inverse, center, middle
 
-# RMarkdown 
+# RMarkdown
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt;
 
 Structure
 
@@ -53,14 +53,14 @@ Structure
 ## Changing font sizes
 
 This css comes with some classes that let you change the font-size of the coding font:
- 
+
 .code60[
 
 ```r
 .code60[some R code with 60 % font size]
 ```
 ]
- 
+
 .code100[
 
 ```r
@@ -75,7 +75,7 @@ So powerful!
 ]
 
 ... or `.font150[]`
- 
+
 .font150[
 So powerful!
 ]
@@ -86,15 +86,15 @@ So powerful!
 
 ## Inline code highlighting
 
-I've set the look of inline code highlighting similar to the one used at `Github` with a grey background. 
+I've set the look of inline code highlighting similar to the one used at `Github` with a grey background.
 
 ---
 
 # Differences to Metropolis Beamer
-  
-* No support of incremental orange break lines in break slides 
 
-* Style of slide numbering 
+* No support of incremental orange break lines in break slides
+
+* Style of slide numbering
 
 ---
 
@@ -143,9 +143,9 @@ coef(summary(fit))
 ```
 
 ```
-##               Estimate Std. Error   t value     Pr(&gt;|t|)
-## (Intercept) -17.579095  6.7584402 -2.601058 1.231882e-02
-## speed         3.932409  0.4155128  9.463990 1.489836e-12
+##               Estimate Std. Error   t value             Pr(&gt;|t|)
+## (Intercept) -17.579095  6.7584402 -2.601058 0.012318816153808828
+## speed         3.932409  0.4155128  9.463990 0.000000000001489836
 ```
 
 ---
@@ -272,13 +272,13 @@ This is normal size ( `\(\LaTeX\)`-friendly terms)
 
 .blue[blue]
 
-.green[green], 
-.yellow[yellow], 
-.orange[orange], 
-.purple[purple], 
+.green[green],
+.yellow[yellow],
+.orange[orange],
+.purple[purple],
 .gray[gray or grey]
 
-You can also use `.bold[]` or `.bolder[]` to emphasize text 
+You can also use `.bold[]` or `.bolder[]` to emphasize text
 
 This is .bold[bold], this is .bolder[bolder] and this is regular markdown **double-star bold** (visible differences depend on the font)
 
@@ -333,7 +333,7 @@ Add `.blur`
 
 .blur[
 &lt;img src="https://www.worldtravelguide.net/wp-content/uploads/2017/04/Think-Denmark-Copenhagen-587892190-SeanPavonePhoto-copy.jpg" width="80%" /&gt;
-] 
+]
 ]
 
 ---
@@ -366,8 +366,111 @@ Add `.shadow`
 
 .shadow[
 &lt;img src="https://beautifulenvironments.files.wordpress.com/2017/12/twinkly-lights.jpg" width="100%" /&gt;
-] 
 ]
+]
+
+---
+
+# Bookdown - Motivation
+
+.pull-left[
+- Producing more complicated documents
+- Automatic number and cross-referencing
+  - Figures
+  - Tables
+  - Equations
+  - Theorems
+  - Custom headers
+- Figure formatting and placement
+- Customized visuals
+]
+
+.pull-right[
+&lt;img src="https://bookdown.org/yihui/bookdown/images/logo.png" width="35%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+# Bookdown - Examples
+
+- Minimal: https://bookdown.org/yihui/bookdown-demo/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Examples
+
+- Tufte style: https://bookdown.org/yihui/bookdown-demo3/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo3/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Usage
+
+- Collection of `.Rmd` files
+  - Individual chapter for each file
+  - Chapter title defined by first-level heading `#`
+  - Usual Rmarkdown syntax
+  - Rendered by filename order by default
+
+.pull-left[
+- `01-Introduction.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `02-Chapter1.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `03-Conclusion.Rmd`
+]
+
+.pull-right[
+
+```r
+# Introduction
+This is the introduction
+```
+
+
+```r
+# Chapter 1
+This is the Chapter 1
+```
+
+
+```r
+# Conclusion
+This is the conclusion
+```
+]
+
+---
+
+# Bookdown - Usage
+
+- Outputs options
+  - `HTML`
+  - `pdf`
+  - `E-Books`
+
+
+---
+
+# Bookdown - Getting started
+
+&lt;iframe width="100%" height="90%"
+src="https://bookdown.org/yihui/bookdown/get-started.html"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Resources
+
+- Github repository: https://github.com/rstudio/bookdown
+- Bookdown book: https://bookdown.org/yihui/bookdown/
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
