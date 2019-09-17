@@ -17,11 +17,20 @@ Le processus de publication avec révision par les pairs est conçu par et pour 
 3. Develop static website with Blogdown or Bookdown
 4. Host the static website on Github
 
+### Objectifs / Exercices
+
 1. Créer un document de base avec Rmarkdown
 2. Déployer un document HTML sur Github
 3. Développer un site web statique avec Blogdown ou Bookdown
 4. Hébergez le site web statique sur Github
 
+### Plan
+
+- R markdown + exos (Texte, titre, images, figures, tables, code shunk, références) -> 1 heure
+- Présentation (exemple simple, ioslide sur Rstudio, custom) -> 15 minutes
+- Bookdown -> 10 minutes
+- Blogdown -> 20 minutes
+- Déployer sur github -> 15 minutes
 
 ### Resources
 
