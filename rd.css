@@ -1,14 +1,14 @@
 a {
-  color: #11446e;
+  color: #1f8de7;
 }
 
 a:hover, a:active {
-  color: #1f8de7;
+  text-decoration: underline;
 }
 
 .remark-inline-code.countdown-time {
   background-color: initial !important;
-  font-size: 60%
+  font-size: 50%
 }
 
 .remark-slide-content {
@@ -48,7 +48,7 @@ a:hover, a:active {
   }
   
   .remark-slide-content > h2, h3, h4 {
-    padding-top: -15px;
+    padding-top: -30px;
     padding-bottom: 00px;
     color: #1A292C;
     text-shadow: none;
@@ -59,14 +59,15 @@ a:hover, a:active {
   }
   
   .remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
-    font-size: 35px;
+    font-size: 30px;
     color: #11446e;
   }
   
   .remark-slide-content > h3, .remark-slide-content > h4,
   .pull-left > h3, .pull-left > h4, .pull-right > h3, .pull-right > h4 {
-    font-size: 30px;
+    font-size: 25px;
     color: #11446e;
+    font-weight: bold;
   }
   
   .remark-slide-number {
