@@ -1,4 +1,15 @@
+a {
+  color: #11446e;
+}
 
+a:hover, a:active {
+  color: #1f8de7;
+}
+
+.remark-inline-code.countdown-time {
+  background-color: initial !important;
+  font-size: 60%
+}
 
 .remark-slide-content {
     background-color: #FAFAFA;
@@ -49,11 +60,13 @@
   
   .remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
     font-size: 35px;
+    color: #11446e;
   }
   
   .remark-slide-content > h3, .remark-slide-content > h4,
   .pull-left > h3, .pull-left > h4, .pull-right > h3, .pull-right > h4 {
     font-size: 30px;
+    color: #11446e;
   }
   
   .remark-slide-number {
@@ -87,7 +100,7 @@
     background-color: rgb(11, 43, 70);
     background-size: contain;
     border: 0px;
-    background-position: 550px 0;
+    background-position: 580px 0;
     line-height: 1;
     }
 
