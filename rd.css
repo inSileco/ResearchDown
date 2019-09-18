@@ -29,8 +29,9 @@ a:hover, a:active {
   .remark-slide-content > h1 {
     font-family: 'Roboto Slab';
     font-weight: normal;
-    font-size: 45px;
+    font-size: 37px;
     margin-top: -95px;
+    margin-bottom: 70px;
     margin-left: -00px;
     color: #FAFAFA;
   }
@@ -57,17 +58,19 @@ a:hover, a:active {
     margin-left: 00px;
     margin-bottom: -10px;
   }
-  
+
   .remark-slide-content > h2, .pull-left > h2, .pull-right > h2 {
-    font-size: 30px;
-    color: #11446e;
-  }
-  
-  .remark-slide-content > h3, .remark-slide-content > h4,
-  .pull-left > h3, .pull-left > h4, .pull-right > h3, .pull-right > h4 {
-    font-size: 25px;
+    font-size: 35px;
     color: #11446e;
     font-weight: bold;
+  }
+  
+  .remark-slide-content > h3, .pull-left > h3, .pull-right > h3 {
+    font-size: 30px;
+  }
+
+  .remark-slide-content > h3, .pull-left > h3, .pull-right > h3 {
+    font-size: 25px;
   }
   
   .remark-slide-number {
@@ -84,11 +87,17 @@ a:hover, a:active {
     opacity: 1;
   }
 
-  .inverse h2 {
-    font-size: 15pt;
+  .inverse h1 {
+    font-size: 37pt;
     color: #FAFAFA;
-    text-transform: uppercase;
     opacity: 1;
+  }
+
+  .inverse h2 {
+    font-size: 20pt;
+    color: #FAFAFA;
+    text-align: center;
+    font-weight: 400;
   }
   
   /* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
@@ -109,10 +118,14 @@ a:hover, a:active {
     font-size: 15px;
     color: #e7e8e2; 
     }
+  
+  .remark-slide table {
+    margin-top: 20px;
+  }
 
   .title-slide h1 {
     color: #e7e8e2; 
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 0px;
     margin-right: 300px;
     }

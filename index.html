@@ -6,8 +6,19 @@
     <meta name="author" content="Marie-Hélène Brice, Kevin Cazelles, David Beauchesne &amp; Steve Vissault" />
     <link href="assets/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="assets/remark-css-0.0.1/hygge.css" rel="stylesheet" />
+    <link href="assets/ionicons-2.0.1/css/ionicons.min.css" rel="stylesheet" />
+    <link href="assets/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
     <link href="assets/countdown-0.3.3/countdown.css" rel="stylesheet" />
     <script src="assets/countdown-0.3.3/countdown.js"></script>
+    <script src="assets/htmlwidgets-1.3/htmlwidgets.js"></script>
+    <script src="assets/jquery-1.12.4/jquery.min.js"></script>
+    <link href="assets/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+    <script src="assets/leaflet-1.3.1/leaflet.js"></script>
+    <link href="assets/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+    <script src="assets/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+    <script src="assets/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+    <link href="assets/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+    <script src="assets/leaflet-binding-2.0.2/leaflet.js"></script>
     <link rel="stylesheet" href="rd.css" type="text/css" />
     <link rel="stylesheet" href="rd-font.css" type="text/css" />
   </head>
@@ -44,35 +55,24 @@ class: clear, middle, center
 
 ---
 
-class: clear
+class: clear, middle
 
-.pull-left[
-&lt;img src="assets/img/Rmdformat.png" width="100%" /&gt;
-]
+## R Markdown universe
 
-.pull-right[
-## The `down` universe
+R Markdown produces dynamic document in a variety of format.
 
-`rmarkdown` produces dynamic document in a variety of format.
-
-**Opens new possibilities with R**
+### Opens new possibilities with R:
 
 * make CV, poster &amp; online presentation
 * format scientific paper (`rticles`)
 * help to document your research through notebook (`bookdown`)
 * build an academic blog or website (`blogdown`)
-]
 
 ---
 
-class: clear
+class: clear, middle
 
-.pull-left[
-&lt;img src="assets/img/Rmdformat.png" width="100%" /&gt;
-]
-
-.pull-right[
-## But what's `rmarkdown`?
+## But what's R Markdown?
 
 - ["An authoring framework for data science."](https://rmarkdown.rstudio.com/lesson-1.html) (✔️)
 - [A document format (.Rmd).](https://bookdown.org/yihui/rmarkdown/) (✔️)
@@ -83,18 +83,15 @@ class: clear
 - [Wizardry.](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/rmarkdown_wizards.png) (🧙‍♂️)
 
 
-]
-
 ---
 
 class: inverse, center, middle
 
-# **Workshop objective**
+# Workshop objective
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top:-60px" size=1px width=720px&gt;&lt;/html&gt; 
 
-Build a website | notebook | presentation with &lt;code style="color:rgb(11, 43, 70)"&gt;rmarkdown&lt;/code&gt;   
-and deploys it on the web
+## Build a website | notebook | presentation with &lt;code style="color:rgb(11, 43, 70)"&gt;rmarkdown&lt;/code&gt; and deploys it on the web
 
 
 ---
@@ -102,12 +99,11 @@ class: inverse, center, middle
 
 # Basic Anatomy
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt;
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt;
 
-Rmarkdown
+## R Markdown (<i class="ion  ion-social-markdown "></i> + <i class="fab  fa-r-project "></i>)
 
 ---
-
 
 # Exercice
 
@@ -120,13 +116,28 @@ Rmarkdown
 ### Try to identify these parts in the source and the output:
 
 - The metadata
-- The text
-- The code
+- The text <i class="ion  ion-social-markdown "></i>
+- The code <i class="fab  fa-r-project "></i>
 - The output
 
-<div class="countdown" id="timer_5d82575d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5d82b8f9" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
+
+---
+
+
+# How does R Markdown work?
+
+.pull-left[
+&lt;img src="assets/img/Rmdformat.png" width="100%" /&gt;
+]
+
+.pull-right[
+- 🤷
+- I press knit, a document appears, and I believe that anything happening in between could be actual magic.
+- `knitr` executes the code and converts `.Rmd` to `.md`; Pandoc renders the `.md` file to the output format you want.
+]
 
 ---
 
@@ -139,15 +150,17 @@ class: middle, center, clear
 ---
 class: inverse, center, middle
 
-#  Metadata
+#  Document metadata
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
+
+## R Markdown (<i class="ion  ion-social-markdown "></i> + <i class="fab  fa-r-project "></i>)
 
 ---
 
 # Metadata and options
 
-Metadata with options are defined in the header of the `.Rmd` document (following the YAML syntax) as a set of `key` and `value`.
+Metadata with options are defined in the header of the `.Rmd` document as a set of `key` and `value` (YAML syntax).
 
 .pull-left[
 ### One output
@@ -195,7 +208,7 @@ Use `?html_document` from your R console to:
 
 If this was easy, try to embed the Rmd source code to download.
 
-<div class="countdown" id="timer_5d8257ac" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5d82b6e2" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -220,6 +233,16 @@ introduction of the content
 ```
 
 ---
+class: inverse, center, middle
+
+#  Document content
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
+
+## R Markdown (<i class="ion  ion-social-markdown "></i> + <i class="fab  fa-r-project "></i>)
+
+
+---
 
 class: clear, middle, center
 
@@ -230,32 +253,167 @@ class: clear, middle, center
 ---
 class: inverse, center, middle
 
-#  Text
+# Text formatting
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
 
-markdown
 
----
-
-# Header
-
+## Markdown <i class="ion  ion-social-markdown "></i> 
 
 ---
 
 # Text style
 
+.pull-left[
+```md
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+  
+*italic* or _italic_
+**bold**
+`code`
+  
+```r
+library(tibble)
+data(iris)
+glimpse(as_tibble(iris))
+``````
+``
+]
+.pull-right[
+&lt;h1 style="margin:0px;padding:0px"&gt;Header 1&lt;/h1&gt;
+&lt;h2 style="margin:0px;padding:0px"&gt;Header 2&lt;/h2&gt;
+&lt;h3 style="margin:0px;padding:0px"&gt;Header 3&lt;/h3&gt;
+&lt;h4 style="margin:0px;padding:0px"&gt;Header 4&lt;/h4&gt;
+*italic* or _italic_  
+**bold**  
+`code`
+```r
+library(tibble)
+data(iris)
+glimpse(as_tibble(iris))
+
+```
+]
+
 ---
 
 # Lists
+
+.pull-left[
+```md 
+Lorem ipsum dolor sit amet, 
+consectetur 
+adipiscing elit.
+ 
+- Cras convallis purus.
+- Nunc faucibus.
+- Maecenas ipsum dolor.
+
+Nulla vehicula metus vel tortor 
+venenatis luctus. 
+Etiam tempus sit amet ligula
+nec pretium. Aenean ultrices 
+massa sed pulvinar pulvinar. 
+
+1. Duis aliquam commodo volutpat. 
+1. Mauris ultrices. 
+1. Aliquam eu erat.
+```
+] 
+
+.pull-right[
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ 
+* Cras convallis purus. 
+- Nunc faucibus. 
+* Maecenas ipsum dolor. 
+
+Nulla vehicula metus vel tortor venenatis luctus.
+
+1. Duis aliquam commodo volutpat. 
+1. Mauris ultrices. 
+1. Aliquam eu erat.
+]
+
 
 ---
 
 # Images
 
+.pull-left[
+```md 
+![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+```
+] 
+
+.pull-right[
+![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+]
+
+
+
+
 ---
 
 # Links
+
+
+.pull-left[
+```md 
+[Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+```
+] 
+
+.pull-right[
+[Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
+]
+
+
+---
+
+# Tables
+
+.pull-left[
+
+### Syntax
+
+
+```md
+| Time          | Session | Topic    |
+|:--------------|:-------:|---------:|
+| _left_        | _center_| _right_  |
+| 01:00 - 01:50 | 1       | Anatomy  |
+| 01:50 - 02:00 |         | *Break*  |
+| 02:00 - 02:45 | 2       | Tables   |
+| 02:45 - 03:00 |         | *Break*  |
+```
+
+]
+
+.pull-right[
+
+### Output  
+
+  
+| Time          | Session | Topic    |
+|:--------------|:-------:|---------:|
+| _left_        | _center_| _right_  |
+| 01:00 - 01:50 | 1       | Anatomy  |
+| 01:50 - 02:00 |         | *Break*  |
+| 02:00 - 02:45 | 2       | Tables   |
+| 02:45 - 03:00 |         | *Break*  |
+
+]
+
+
+- <i class="fas  fa-exclamation-triangle "></i> the `:` specify the alignement.
+- Not convenient for long table, we will use instead <i class="fab  fa-r-project "></i> to print the markdown table for us.
+
 
 
 ---
@@ -263,125 +421,150 @@ class: inverse, center, middle
 
 #  Code
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55'style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
+
+## The <i class="fab  fa-r-project "></i>  part
+
+---
+
+# Chunks
+
+
+
+````md
+This text is written in markdown
+
+```{r}
+library(tibble)
+data(iris)
+glimpse(as_tibble(iris))
+```
+````
+
+- <i class="fas  fa-exclamation-triangle "></i> `r` between brackets `{}`, why is that?
+- Where is the <i class="fab  fa-r-project "></i> code and the <i class="ion  ion-social-markdown "></i> section?
+
+
+---
+
+# Chunks
+
+### Code
+
+
+```r
+library(tibble)
+data(iris)
+glimpse(as_tibble(iris))
+```
+
+### Print output
+
+
+```
+## Observations: 150
+## Variables: 5
+## $ Sepal.Length &lt;dbl&gt; 5.1, 4.9, 4.7, 4.6, 5.0, 5.4, 4.6, 5.0, 4.4, 4.9, 5…
+## $ Sepal.Width  &lt;dbl&gt; 3.5, 3.0, 3.2, 3.1, 3.6, 3.9, 3.4, 3.4, 2.9, 3.1, 3…
+## $ Petal.Length &lt;dbl&gt; 1.4, 1.4, 1.3, 1.5, 1.4, 1.7, 1.4, 1.5, 1.4, 1.5, 1…
+## $ Petal.Width  &lt;dbl&gt; 0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.3, 0.2, 0.2, 0.1, 0…
+## $ Species      &lt;fct&gt; setosa, setosa, setosa, setosa, setosa, setosa, set…
+```
+
+
+---
+
+# Chunks
+
+.pull-left[
+### Code
+
+
+```r
+library(ggplot2)
+data(iris)
+ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(aes(color=Species, shape=Species)) +
+  xlab("Sepal Length") +  ylab("Sepal Width") +
+  ggtitle("Sepal Length-Width")
+```
+]
+
+.pull-right[
+### Graphic output
+
+![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+]
+
+---
+
+# Chunks
+
+.pull-left[
+### Code
+
+
+```r
+library(rbokeh)
+data(iris)
+figure() %&gt;%
+  ly_points(Sepal.Length, Sepal.Width, data = iris,
+    color = Species, glyph = Species,
+    hover = list(Sepal.Length, Sepal.Width))
+```
+]
+
+.pull-right[
+&lt;h3 style="margin-bottom:10px;"&gt;Dynamic output&lt;/h3&gt;
+
+<div id="htmlwidget-f1713a95c245dd6462e1" style="width:400px;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f1713a95c245dd6462e1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
+]
+
+
+
+---
+
+# Exercice
+
+**TODO**: Play with `HTML widgets`
+
+
 
 ---
 class: inverse, center, middle
 
-#  Outputs
+# <i class="fas  fa-rocket "></i> Outputs
 
-&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' size=1px width=720px&gt;&lt;/html&gt; 
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
 
+---
+
+# Chunk option
+
+### TODO: MH -- Cover the chunk options available (see from: https://rmd4medicine.netlify.com/slides/01-rmd-anatomy.html#66)
+
+
+---
+
+# Exercice
+
+**TODO**: Play with `echo` &amp; `eval` and others
 
 
 
 ---
 
-# Bookdown - Motivation
+# Take home
 
-.pull-left[
-- Producing more complicated documents
-- Automatic number and cross-referencing
-  - Figures
-  - Tables
-  - Equations
-  - Theorems
-  - Custom headers
-- Figure formatting and placement
-- Customized visuals
-]
-
-.pull-right[
-&lt;img src="https://bookdown.org/yihui/bookdown/images/logo.png" width="35%" style="display: block; margin: auto;" /&gt;
-]
-
----
-
-# Bookdown - Examples
-
-- Minimal: https://bookdown.org/yihui/bookdown-demo/
-
-&lt;iframe width="100%" height="80%"
-src="https://bookdown.org/yihui/bookdown-demo/"&gt;
-&lt;/iframe&gt;
-
----
-
-# Bookdown - Examples
-
-- Tufte style: https://bookdown.org/yihui/bookdown-demo3/
-
-&lt;iframe width="100%" height="80%"
-src="https://bookdown.org/yihui/bookdown-demo3/"&gt;
-&lt;/iframe&gt;
-
----
-
-# Bookdown - Usage
-
-- Collection of `.Rmd` files
-  - Individual chapter for each file
-  - Chapter title defined by first-level heading `#`
-  - Usual Rmarkdown syntax
-  - Rendered by filename order by default
-
-.pull-left[
-- `01-Introduction.Rmd`
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
-- `02-Chapter1.Rmd`
-&lt;br&gt;&lt;br&gt;&lt;br&gt;
-- `03-Conclusion.Rmd`
-]
-
-.pull-right[
-
-```r
-# Introduction
-This is the introduction
-```
-
-
-```r
-# Chapter 1
-This is the Chapter 1
-```
-
-
-```r
-# Conclusion
-This is the conclusion
-```
-]
-
----
-
-# Bookdown - Usage
-
-- Outputs options
-  - `HTML`
-  - `pdf`
-  - `E-Books`
-
-
----
-
-# Bookdown - Getting started
-
-&lt;iframe width="100%" height="90%"
-src="https://bookdown.org/yihui/bookdown/get-started.html"&gt;
-&lt;/iframe&gt;
-
----
-
-# Bookdown - Resources
-
-- Github repository: https://github.com/rstudio/bookdown
-- Bookdown book: https://bookdown.org/yihui/bookdown/
+#### TODO: https://rmd4medicine.netlify.com/slides/01-rmd-anatomy.html#78
 
 ---
 class: inverse, center, middle
 
-# Presentation formats
+# <i class="fas  fa-rocket "></i> Slides
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
 
 
 ---
@@ -482,6 +665,8 @@ output:
 ### [2. ioslides](https://kevcaz.github.io/pres_Rmarkdown_fr/#1)
 ### [3. xaringan](https://slides.yihui.name/xaringan/#1)
 
+---
+
 # Get started
 
 ## [xaringan](https://slides.yihui.name/xaringan/#1)
@@ -508,13 +693,128 @@ output:
 # Slides 2
 
 ```
+---
+
+class: inverse, center, middle
+
+# <i class="fas  fa-rocket "></i> Blogdown
+
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px&gt;&lt;/html&gt; 
+
+
+---
+
+# Blogdown
+
+#### TODO: Steve
+
+---
+# Bookdown - Motivation
+
+.pull-left[
+- Producing more complicated documents
+- Automatic number and cross-referencing
+  - Figures
+  - Tables
+  - Equations
+  - Theorems
+  - Custom headers
+- Figure formatting and placement
+- Customized visuals
+]
+
+.pull-right[
+
+]
+
+---
+
+# Bookdown - Examples
+
+- Minimal: https://bookdown.org/yihui/bookdown-demo/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Examples
+
+- Tufte style: https://bookdown.org/yihui/bookdown-demo3/
+
+&lt;iframe width="100%" height="80%"
+src="https://bookdown.org/yihui/bookdown-demo3/"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Usage
+
+- Collection of `.Rmd` files
+  - Individual chapter for each file
+  - Chapter title defined by first-level heading `#`
+  - Usual Rmarkdown syntax
+  - Rendered by filename order by default
+
+.pull-left[
+- `01-Introduction.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `02-Chapter1.Rmd`
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+- `03-Conclusion.Rmd`
+]
+
+.pull-right[
+
+```r
+# Introduction
+This is the introduction
+```
+
+
+```r
+# Chapter 1
+This is the Chapter 1
+```
+
+
+```r
+# Conclusion
+This is the conclusion
+```
+]
+
+---
+
+# Bookdown - Usage
+
+- Outputs options
+  - `HTML`
+  - `pdf`
+  - `E-Books`
+
+
+---
+
+# Bookdown - Getting started
+
+&lt;iframe width="100%" height="90%"
+src="https://bookdown.org/yihui/bookdown/get-started.html"&gt;
+&lt;/iframe&gt;
+
+---
+
+# Bookdown - Resources
+
+- Github repository: https://github.com/rstudio/bookdown
+- Bookdown book: https://bookdown.org/yihui/bookdown/
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script src="macros.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "dracula",
-"highlightLines": true,
 "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
@@ -555,24 +855,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 (function() {
