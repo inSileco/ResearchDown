@@ -17,7 +17,8 @@ a:hover, a:active {
     font-size: 23px;
     font-weight: 300;
     line-height: 1.5;
-    padding: 1em 2em 1em 2em
+    padding: 1em 2em 1em 2em;
+    color: #193e5d;
   }
   
 
@@ -39,7 +40,6 @@ a:hover, a:active {
   .remark-slide-content > inverse {
     width: 112px;
     height: 47px;
-    border-bottom: 1px solid black;
     position: absolute;
   }
   
@@ -51,7 +51,7 @@ a:hover, a:active {
   .remark-slide-content > h2, h3, h4 {
     padding-top: -30px;
     padding-bottom: 00px;
-    color: #1A292C;
+    color: #2d5170;
     text-shadow: none;
     font-weight: 400;
     text-align: left;

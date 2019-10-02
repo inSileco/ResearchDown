@@ -438,8 +438,6 @@ glimpse(as_tibble(iris))
 ```
 ````
 
-
-
 - `r icon::fa("exclamation-triangle")` `r` between brackets `{}`, why is that?
 - Where is the `r icon::fa("r-project")` code and the `r icon::ii("social-markdown")` section?
 
@@ -515,8 +513,7 @@ figure() %>%
 .pull-right[
 <h3 style="margin-bottom:10px;">Dynamic output</h3>
 
-```{r echo = FALSE, eval = TRUE, message = FALSE, dpi=300}
-library(dplyr)
+```{r echo = FALSE, eval = TRUE, dpi=300}
 library(leaflet)
 leaflet(height=400, width=400) %>%
   addTiles() %>%  
