@@ -1,0 +1,26 @@
+---
+title: "Diamond sizes"
+date: 2016-08-25
+output: html_document
+
+---
+
+```{r setup, include = FALSE}
+library(ggplot2)
+library(dplyr)
+
+smaller <- diamonds %>%
+  filter(carat <= 2.5)
+```
+
+We have data about `r nrow(diamonds)` diamonds. Only
+`r nrow(diamonds) - nrow(smaller)` are larger than
+2.5 carats.
+
+```{r, echo = FALSE, fig.height=4, fig.width=4}
+DT::datatable(smaller)
+```
+
+```{r, echo = FALSE, fig.height=4, fig.width=4}
+hist(diamonds$carat)
+```
