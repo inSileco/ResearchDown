@@ -26,7 +26,7 @@ class: title-slide, middle
   David Beauchesne & Kevin Cazelles
 ]
 
-<img src="assets/img/inSileco.png" width="80px"></img>
+<a href="https://insileco.github.io"><img src="assets/img/inSileco.png" width="80px"></img></a>
 
 <div style="color:white;">
 .font60[Adapted from [Alison Hill](https://rmd4medicine.netlify.com/slides/01-rmd-anatomy.html#8)]
@@ -473,8 +473,8 @@ head(iris)
 ---
 
 # Chunks
-
 .pull-left[
+
 ### Code
 
 ```{r}
