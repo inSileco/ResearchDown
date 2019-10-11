@@ -34,6 +34,26 @@ class: title-slide, middle
 
 ---
 
+# Workshop setup
+
+- Make sure you have an updated version of [RStudio](https://rstudio.com/products/rstudio/download/)
+- Install the [code version-control system Git](https://git-scm.com/downloads)
+- Create a [Github account](https://github.com/join?source=header-home)
+- Run the following R command: 
+```{r eval=FALSE} 
+  install.packages(c("rmarkdown",
+                      "htmlwidgets",
+                      "bookdown",
+                      "blogdown",
+                      "DT",
+                      "leaflet",
+                      "rbokeh"))
+```
+- Be prepared to turn into a geek or just learn cool stuff 
+
+
+---
+
 class: clear, middle, center
 
 ```{r echo=FALSE, out.width="80%"}
@@ -900,14 +920,14 @@ XXXX are larger than 2.5 carats.
 5. `DT::datatable()` doesn't work with PDF or Word document, why?
 
 ```{r, echo=FALSE}
-countdown::countdown(minutes = 12, seconds = 0)
+countdown::countdown(minutes = 10, seconds = 0)
 ```
 
 
 ---
 
 
-# Wraping up
+# Wrapping up
 
 ✔️ **Document your document**: use YAML to set up meaningful metadata
 
@@ -935,7 +955,9 @@ knitr::include_graphics("assets/img/rmarkdownflow.png")
 
 --
 
-`r icon::fa("arrow-circle-right")` Impress your director | Turn into a geek | Expose your skills on the web 
+`r icon::fa("arrow-circle-right")` Impress your director with dynamic output | Turn into a geek | Expose your skills on the web 
+ 
+
 
 ---
 class: inverse, center, middle
@@ -961,13 +983,61 @@ knitr::include_graphics("assets/img/rmarkdownflow_withSel_github.png")
 
 # `r icon::fa("rocket")` Launch document on the web
 
-## 4 steps 
+### 3 steps 
 
-1. Open new repository
-2. Create a new RStudio project
-3. Connect the RStudio project to Github
-4. Send HTML files on the Github repository with RStudio
+1. Open new GitHub repository
+2. Link this new repo to a RStudio project
+3. Add a `.Rmd` document and generate the HTML document (we know that part!)
+4. Declare and document the modifications on the repository
+5. Send these modifications with the HTML output on Github via RStudio
 
+--
+
+### Let's do it together!
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 1. Open a new GitHub repository
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/createRepo.png")
+```
+
+--
+
+- Name it as `firstOnlineDocument`
+- Let the repository public
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 2. Link this new repo to a RStudio project
+
+In RStudio: file > new project... > Version control > Git
+
+```{r echo=FALSE, out.width="40%", fig.align = 'center'}
+knitr::include_graphics("assets/img/createProject.png")
+```
+
+- Fill the field `Repository URL` with the URL address of your repo **and add `.git` at the end**
+- Example: `https://github.com/SteveViss/firstOnlineDocument.git`
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 3. Add a `.Rmd` document and generate the HTML document 
+
+- You know that part, so let's do it.
+- We want to create a `.Rmd`, which produces a `.html` file in the RStudio project folder.
+
+
+```{r, echo=FALSE}
+countdown::countdown(minutes = 5, seconds = 0)
+```
 
 ---
 class: inverse, center, middle
@@ -1017,7 +1087,7 @@ knitr::include_graphics(c('assets/img/ioslides1.png', 'assets/img/ioslides2.png'
 ---
 # ioslides
 
-- specify the `ioslides_presentation` output format in the YAML metadata of your document
+Specify the `ioslides_presentation` output format in the YAML metadata of your document
 
 
 ```md
@@ -1030,9 +1100,9 @@ output: ioslides_presentation
 ```
 
 ---
-# ioslides 🧶
+# ioslides 
 
-- knit to create the HTML presentation!
+Knit 🧶 to create the HTML presentation!
 
 .center[![:scale 90%](assets/img/ioslides_knit.png)]
 
@@ -1040,7 +1110,7 @@ output: ioslides_presentation
 ---
 # ioslides
 
-- create new slides by using `#` or `##`
+Create new slides by using `#` or `##`
 
 
 ```md
@@ -1052,7 +1122,7 @@ output: ioslides_presentation
 ---
 # ioslides
 
-- create new slides by using `#` or `##`
+Create new slides by using `#` or `##`
 
 ```md
 # Section slide | with background image
@@ -1067,7 +1137,7 @@ output: ioslides_presentation
 ---
 # ioslides
 
-- create new slides by using `#` or `##`
+Create new slides by using `#` or `##`
 
 
 ```md
@@ -1137,7 +1207,8 @@ output:
 ---
 # ioslides - options
 
-Customize:
+### Customize
+
 - presentation size using `widesreen`
 - speed of slide transitions using `transition`
 - incremental bullets using `incremental`
@@ -1160,7 +1231,7 @@ output:
 ---
 # ioslides - Customization
 
-- You can customize your presentation by adding your own CSS and your own template
+You can customize your presentation by adding your own CSS and your own template
 
 ```md
 ---
@@ -1258,35 +1329,26 @@ The end!
 ]
 
 
-
 ---
 
 # Resources
 
-<br>
-
-### [1. R Markdown: The Definitive Guide - Chapter 4](https://bookdown.org/yihui/rmarkdown/presentations.html)
-### [2. ioslides](https://kevcaz.github.io/pres_Rmarkdown_fr/#1)
-### [3. xaringan](https://slides.yihui.name/xaringan/#1)
+1. [R Markdown: The Definitive Guide - Chapter 4](https://bookdown.org/yihui/rmarkdown/presentations.html)
+2. [ioslides](https://kevcaz.github.io/pres_Rmarkdown_fr/#1)
+3. [xaringan](https://slides.yihui.name/xaringan/#1)
 
 
 ---
 
 class: inverse, center, middle
 
-# `r icon::fa("rocket")` Blogdown
+# `r icon::fa("rocket")` Bookdown
 
 <html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 
 ---
-
-# Blogdown
-
-#### TODO: Steve
-
----
-# Bookdown - Motivation
+# Motivation
 
 .pull-left[
 - Producing more complicated documents
