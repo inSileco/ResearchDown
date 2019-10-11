@@ -1023,7 +1023,7 @@ knitr::include_graphics("assets/img/createProject.png")
 ```
 
 - Fill the field `Repository URL` with the URL address of your repo **and add `.git` at the end**
-- Example: `https://github.com/SteveViss/firstOnlineDocument.git`
+- Exemple: `https://github.com/SteveViss/firstOnlineDocument.git`
 
 ---
 
