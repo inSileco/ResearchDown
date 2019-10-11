@@ -19,7 +19,7 @@ Le processus de publication avec révision par les pairs est conçu par et pour 
 ### Requirements
 
 1. Make sure you have an updated version of [RStudio](https://rstudio.com/products/rstudio/download/)
-2. Install the [code version control Git](https://git-scm.com/downloads)
+2. Install the [code version-control system Git](https://git-scm.com/downloads)
 3. Create a [Github account](https://github.com/join?source=header-home)
 3. Run the following R command: `install.packages(c("rmarkdown","htmlwidgets","bookdown","blogdown","DT","leaflet","rbokeh"))`
 4. Be prepared to turn into a geek or just learn cool stuff :sunglasses:
