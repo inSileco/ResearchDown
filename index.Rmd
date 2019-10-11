@@ -983,12 +983,12 @@ knitr::include_graphics("assets/img/rmarkdownflow_withSel_github.png")
 
 # `r icon::fa("rocket")` Launch document on the web
 
-### 3 steps 
+### 5 steps 
 
 1. Open new GitHub repository
 2. Link this new repo to a RStudio project
 3. Add a `.Rmd` document and generate the HTML document (we know that part!)
-4. Declare and document the modifications on the repository
+4. Declare (`add`) and document (`commit`) the modifications on the repository
 5. Send these modifications with the HTML output on Github via RStudio
 
 --
@@ -1032,12 +1032,26 @@ knitr::include_graphics("assets/img/createProject.png")
 ### 3. Add a `.Rmd` document and generate the HTML document 
 
 - You know that part, so let's do it.
-- We want to create a `.Rmd`, which produces a `.html` file in the RStudio project folder.
-
+- We want to create a `.Rmd` and produces a `.html` file in the RStudio project folder.
+- `r icon::fa("exclamation-triangle")` with the following filenames: `index.html` & `index.Rmd`
 
 ```{r, echo=FALSE}
 countdown::countdown(minutes = 5, seconds = 0)
 ```
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 4. Declare (`add`) and document (`commit`) the modifications on the repository
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 5. Send these modifications with the HTML output on Github via RStudio
+
+
 
 ---
 class: inverse, center, middle
