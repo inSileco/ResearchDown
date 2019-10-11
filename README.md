@@ -1,7 +1,7 @@
 # Touchdown your research with `rmarkdown`
 
-### Online presentation: https://insileco.github.io/ResearchDown/#1
-### Duration: 2 hours
+### [Access to the Online presentation](https://insileco.github.io/ResearchDown/#1)
+(Duration: 2 hours)
 
 ### Abstract | Résumé
 
@@ -22,7 +22,7 @@ Le processus de publication avec révision par les pairs est conçu par et pour 
 2. Install the [code version control Git](https://git-scm.com/downloads)
 3. Create a [Github account](https://github.com/join?source=header-home)
 3. Run the following R command: `install.packages(c("rmarkdown","htmlwidgets","bookdown","blogdown","DT","leaflet","rbokeh"))`
-4. Be prepare to turn into a geek :geek: or just learn cool stuff :sunglasses:
+4. Be prepared to turn into a geek or just learn cool stuff :sunglasses:
 
 
 ### Resources
