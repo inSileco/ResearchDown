@@ -22,11 +22,11 @@ class: title-slide, middle
 .instructors[
   **QCBS R Workshop**
 
-  Marie-Hélène Brice, Kevin Cazelles,
-  David Beauchesne & Steve Vissault
+  Steve Vissault, Marie-Hélène Brice,
+  David Beauchesne & Kevin Cazelles
 ]
 
-<img src="assets/img/inSileco.png" width="80px"></img>
+<a href="https://insileco.github.io"><img src="assets/img/inSileco.png" width="80px"></img></a>
 
 <div style="color:white;">
 .font60[Adapted from [Alison Hill](https://rmd4medicine.netlify.com/slides/01-rmd-anatomy.html#8)]
@@ -78,7 +78,7 @@ class: inverse, center, middle
 
 # Workshop objective
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top:-60px" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top:-60px" size=1px width=720px></html>
 
 ## Build a website | notebook | presentation with <code style="color:rgb(11, 43, 70)">rmarkdown</code> and deploys it on the web
 
@@ -94,7 +94,7 @@ class: inverse, center, middle
 
 ---
 
-# Exercice
+# `r icon::fa("gamepad")` Exercice
 
 1. Open RStudio
 2. File > New File > R Markdown
@@ -143,7 +143,7 @@ class: inverse, center, middle
 
 #  Document metadata
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 ## R Markdown (`r icon::ii("social-markdown")` + `r icon::fa("r-project")`)
 
@@ -166,7 +166,7 @@ output: html_document
 ### Two outputs
 ```r
 ---
-output: 
+output:
 html_document:
     toc: true
   pdf_document:
@@ -175,7 +175,7 @@ html_document:
 ```
 ]
 
-Options available depend on the output.  
+Options available depend on the output.
 See `?html_document `, `?pdf_document`, `?word_document`
 
 ???
@@ -185,7 +185,7 @@ See `?html_document `, `?pdf_document`, `?word_document`
 
 ---
 
-# Exercice
+# `r icon::fa("gamepad")` Exercice
 
 ### Edit the output options
 
@@ -219,7 +219,7 @@ output:
 ---
 
 We have done a brief overview of the document options (the shape), we now make an
-introduction of the content 
+introduction of the content
 
 ```
 
@@ -228,7 +228,7 @@ class: inverse, center, middle
 
 #  Document content
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 ## R Markdown (`r icon::ii("social-markdown")` + `r icon::fa("r-project")`)
 
@@ -248,10 +248,10 @@ class: inverse, center, middle
 
 # Text formatting
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 
-## Markdown `r icon::ii("social-markdown")` 
+## Markdown `r icon::ii("social-markdown")`
 
 ---
 
@@ -263,11 +263,11 @@ class: inverse, center, middle
 ## Header 2
 ### Header 3
 #### Header 4
-  
+
 *italic* or _italic_
 **bold**
 `code`
-  
+
 `r ''`
 ```r
 library(tibble)
@@ -282,8 +282,8 @@ glimpse(as_tibble(iris))
 <h2 style="margin:0px;padding:0px">Header 2</h2>
 <h3 style="margin:0px;padding:0px">Header 3</h3>
 <h4 style="margin:0px;padding:0px">Header 4</h4>
-*italic* or _italic_  
-**bold**  
+*italic* or _italic_
+**bold**
 `code`
 ```r
 library(tibble)
@@ -293,43 +293,47 @@ glimpse(as_tibble(iris))
 ```
 ]
 
+
+???
+Headers help you to structure your Rmd Document
+
 ---
 
 # Lists
 
 .pull-left[
-```md 
-Lorem ipsum dolor sit amet, 
-consectetur 
+```md
+Lorem ipsum dolor sit amet,
+consectetur
 adipiscing elit.
- 
+
 - Cras convallis purus.
 - Nunc faucibus.
 - Maecenas ipsum dolor.
 
-Nulla vehicula metus vel tortor 
-venenatis luctus. 
+Nulla vehicula metus vel tortor
+venenatis luctus.
 Etiam tempus sit amet ligula
-nec pretium. Aenean ultrices 
-massa sed pulvinar pulvinar. 
+nec pretium. Aenean ultrices
+massa sed pulvinar pulvinar.
 
-1. Duis aliquam commodo volutpat. 
-1. Mauris ultrices. 
+1. Duis aliquam commodo volutpat.
+1. Mauris ultrices.
 1. Aliquam eu erat.
 ```
-] 
+]
 
 .pull-right[
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- 
-* Cras convallis purus. 
-- Nunc faucibus. 
-* Maecenas ipsum dolor. 
+
+* Cras convallis purus.
+- Nunc faucibus.
+* Maecenas ipsum dolor.
 
 Nulla vehicula metus vel tortor venenatis luctus.
 
-1. Duis aliquam commodo volutpat. 
-1. Mauris ultrices. 
+1. Duis aliquam commodo volutpat.
+1. Mauris ultrices.
 1. Aliquam eu erat.
 ]
 
@@ -339,10 +343,10 @@ Nulla vehicula metus vel tortor venenatis luctus.
 # Images
 
 .pull-left[
-```md 
+```md
 ![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
 ```
-] 
+]
 
 .pull-right[
 ![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
@@ -357,11 +361,11 @@ Nulla vehicula metus vel tortor venenatis luctus.
 
 
 .pull-left[
-```md 
+```md
 [Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
 ![Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
 ```
-] 
+]
 
 .pull-right[
 [Hulk vs Trump](https://media.giphy.com/media/MkGyW2cOH7uhO/giphy.gif)
@@ -392,9 +396,9 @@ Nulla vehicula metus vel tortor venenatis luctus.
 
 .pull-right[
 
-### Output  
+### Output
 
-  
+
 | Time          | Session | Topic    |
 |:--------------|:-------:|---------:|
 | _left_        | _center_| _right_  |
@@ -414,9 +418,9 @@ Nulla vehicula metus vel tortor venenatis luctus.
 ---
 class: inverse, center, middle
 
-#  Code
+#  Code chunks
 
-<html><div style='float:left'></div><hr color='#ffdd55'style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55'style="margin-top: -60px;" size=1px width=720px></html>
 
 ## The `r icon::fa("r-project")`  part
 
@@ -428,47 +432,21 @@ class: inverse, center, middle
 knitr::opts_chunk$set(eval=FALSE)
 ```
 
+
+
 ````md
 This text is written in markdown
 
-```{r}
+```{r}`r ''`
 library(tibble)
 data(iris)
-glimpse(as_tibble(iris))
+head(iris)
 ```
 ````
 
 - `r icon::fa("exclamation-triangle")` `r` between brackets `{}`, why is that?
 - Where is the `r icon::fa("r-project")` code and the `r icon::ii("social-markdown")` section?
 
-
----
-
-# Chunks
-
-### Inline code
-
-````md
-```{r}
-This text is written in markdown. 
-
-We studied `r length(levels(iris$Species))` iris species and took
-measurements on `r nrow(iris)` flowers.
-
-We found that Iris virginica had the longest sepal with a mean of 
-`r mean(iris$Sepal.Length[iris$Species=="virginica"])` millimeters!
-``` 
-````
-
-### Output
-
-````md
-This text is written in markdown. 
-
-We studied `r length(levels(iris$Species))` iris species and took measurements on `r nrow(iris)` flowers.
-
-We found that Iris virginica had the longest sepal with a mean of `r mean(iris$Sepal.Length[iris$Species=="virginica"])` millimeters!
-````
 
 
 ---
@@ -480,7 +458,7 @@ We found that Iris virginica had the longest sepal with a mean of `r mean(iris$S
 ```{r}
 library(tibble)
 data(iris)
-glimpse(as_tibble(iris))
+head(iris)
 ```
 
 ### Print output
@@ -488,9 +466,50 @@ glimpse(as_tibble(iris))
 ```{r echo = FALSE, eval = TRUE}
 library(tibble)
 data(iris)
-glimpse(as_tibble(iris))
+head(iris)
 ```
 
+
+---
+
+# Chunks
+.pull-left[
+
+### Code
+
+```{r}
+library(ggplot2)
+data(iris)
+ggplot(
+      data=iris,
+      aes(x = Sepal.Length,
+          y = Sepal.Width)
+  ) +
+geom_point(
+  aes(color=Species, shape=Species)
+) +
+xlab("Sepal Length") +
+ylab("Sepal Width") +
+ggtitle("Sepal Length-Width")
+```
+]
+
+.pull-right[
+### Graphic output
+
+```{r echo = FALSE, eval = TRUE, dpi=300, fig.height=5, fig.width=5}
+library(ggplot2)
+data(iris)
+ggplot(
+      data=iris,
+      aes(x = Sepal.Length,
+          y = Sepal.Width)
+  ) +
+  geom_point(aes(color=Species, shape=Species)) +
+  xlab("Sepal Length") +  ylab("Sepal Width") +
+  ggtitle("Sepal Length-Width")
+```
+]
 
 ---
 
@@ -500,27 +519,26 @@ glimpse(as_tibble(iris))
 ### Code
 
 ```{r}
-library(ggplot2)
-data(iris)
-ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point(aes(color=Species, shape=Species)) +
-  xlab("Sepal Length") +  ylab("Sepal Width") +
-  ggtitle("Sepal Length-Width")
+library(leaflet)
+leaflet(height=400, width=400) %>%
+  addTiles() %>%
+  addMarkers(lng=174.768, lat=-36.852,
+             popup="The birthplace of R")
 ```
 ]
 
 .pull-right[
-### Graphic output
+<h3 style="margin-bottom:10px;">Map</h3>
 
 ```{r echo = FALSE, eval = TRUE, dpi=300}
-library(ggplot2)
-data(iris)
-ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
-  geom_point(aes(color=Species, shape=Species)) +
-  xlab("Sepal Length") +  ylab("Sepal Width") +
-  ggtitle("Sepal Length-Width")
+library(leaflet)
+leaflet(height=400, width=400) %>%
+  addTiles() %>%
+  addMarkers(lng=174.768, lat=-36.852,
+             popup="The birthplace of R")
 ```
 ]
+
 
 ---
 
@@ -531,23 +549,25 @@ ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 
 ```{r}
 library(rbokeh)
-data(iris)
-figure() %>%
-  ly_points(Sepal.Length, Sepal.Width, data = iris,
+p <- figure() %>%
+  ly_points(Sepal.Length, Sepal.Width,
+    data = iris,
     color = Species, glyph = Species,
     hover = list(Sepal.Length, Sepal.Width))
+p
 ```
 ]
 
 .pull-right[
-<h3 style="margin-bottom:10px;">Dynamic output</h3>
+<h3 style="margin-bottom:10px;">Map</h3>
 
-```{r echo = FALSE, eval = TRUE, dpi=300}
-library(leaflet)
-leaflet(height=400, width=400) %>%
-  addTiles() %>%  
-  addMarkers(lng=174.768, lat=-36.852,
-             popup="The birthplace of R")
+```{r echo = FALSE, eval = TRUE, warning=FALSE, dpi = 300}
+library(rbokeh)
+p <- figure(width = 400, height = 400)  %>%
+  ly_points(Sepal.Length, Sepal.Width, data = iris,
+    color = Species, glyph = Species,
+    hover = list(Sepal.Length, Sepal.Width))
+p
 ```
 ]
 
@@ -557,20 +577,68 @@ knitr::opts_chunk$set(eval=TRUE)
 
 ---
 
-# Exercice
+# Inline chunks
 
-**TODO**: Play with `HTML widgets`
+### `r icon::fa("code")` Syntax
 
-```{r, echo=FALSE}
-countdown::countdown(minutes = 5, seconds = 0)
-```
+We studied `` `r
+length(levels(iris$Species))` `` iris species and took
+measurements on `` `r
+nrow(iris)` `` flowers.
+
+We found that Iris virginica had the longest sepal with a mean of
+`` `r
+mean(subset(iris,Species=="virginica")$Sepal.Length)`
+`` millimeters!
+
+### `r icon::fa("file-alt")` Output
+
+````md
+This text is written in markdown.
+
+We studied `r length(levels(iris$Species))` iris species and took measurements on `r nrow(iris)` flowers.
+
+We found that Iris virginica had the longest sepal with a mean of `r mean(iris$Sepal.Length[iris$Species=="virginica"])` millimeters!
+````
+
+
 
 ---
 class: inverse, center, middle
 
-# `r icon::fa("rocket")` Outputs
+# `r icon::fa("rocket")` Chunks options
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
+
+---
+
+# Chunks options
+
+
+.pull-left[
+- Place between curly braces
+  `{r option=value}`
+
+- Multiple options separated by commas
+  `{r option1=value, option2=value}`
+
+- Label your code chunk!
+<img height="160px" width="160px" src="https://d33wubrfki0l68.cloudfront.net/6fcddff214345601f998805adce94ab0e21d8615/2a098/screenshots/rmarkdown-chunk-nav.png"></img>
+
+]
+
+
+.pull-right[
+
+````md
+```{r dispIris, option1=value, option2=value}`r ''`
+library(tibble)
+data(iris)
+head(iris)
+```
+````
+]
+
 
 ---
 
@@ -584,118 +652,116 @@ str(knitr::opts_chunk$get())
 
 ---
 
-# Chunk options
-
-## Default options
+# Default options
 
 .pull-left[
-### Syntax
+
+### `r icon::fa("code")` Syntax
+
 ````md
 ```{r}`r ''`
-glimpse(iris)
+head(iris)
 ```
 ````
+
 ]
 
 .pull-right[
-### Output
+
+### `r icon::fa("file-alt")` Output
+
 ```{r}
-glimpse(iris)
+head(iris)
 ```
+
 ]
 
 ---
 
-# Chunk options
-
-## echo
+# Chunk option `echo`
 
 .pull-left[
-### Syntax
+
+### `r icon::fa("code")` Syntax
+
 ````md
 ```{r echo = FALSE}`r ''`
-glimpse(iris)
+head(iris)
 ```
 ````
+
 ]
 
 .pull-right[
-### Output
+
+### `r icon::fa("file-alt")` Output
+
 ```{r echo = FALSE}
-glimpse(iris)
+head(iris)
 ```
 ]
 
-<br>
 
 - Display results but not code.
 - Useful to present results to people not interested by the code.
-- Use `echo = -1` to hide only the first line of a code chunk. 
+- Use `echo = -1` to hide only the first line of a code chunk.
 
 ---
 
-# Chunk options
+# Chunk option `eval`
 
-## eval
 
 .pull-left[
-### Syntax
+### `r icon::fa("code")` Syntax
 ````md
 ```{r eval = FALSE}`r ''`
-glimpse(iris)
+head(iris)
 ```
 ````
 ]
 
 .pull-right[
-### Output
+### `r icon::fa("file-alt")` Output
 ```{r eval = FALSE}
-glimpse(iris)
+head(iris)
 ```
 ]
 
-<br>
-
-- Code is not evaluated. 
+- Code is not evaluated.
 - Useful to show exemple code.
-- Use `eval = -1` to evaluate every line of a code chunk except the first. 
+- Use `eval = -1` to evaluate every line of a code chunk except the first.
 
 
 ---
 
-# Chunk options
-
-## include
+# Chunk option `include`
 
 .pull-left[
-### Syntax
+### `r icon::fa("code")` Syntax
 ````md
 ```{r include = FALSE}`r ''`
-glimpse(iris)
+head(iris)
 ```
 ````
 ]
 
 .pull-right[
-### Output
+### `r icon::fa("file-alt")` Output
 ```{r include = FALSE}
-glimpse(iris)
+head(iris)
 ```
 ]
 
-<br>
-
-- Code is evaluated but no output (code, results and figures) is displayed. 
+- Code is evaluated but no output (code, results and figures) is displayed.
 - Useful in setup options and package installation.
 
 ---
 
-# Chunk options
+# Chunk option `results`
 
-## results
 
 .pull-left[
-### Syntax
+### `r icon::fa("code")` Syntax
 ````md
 ```{r results = "hold"}`r ''`
 1 + 1
@@ -705,68 +771,60 @@ glimpse(iris)
 ]
 
 .pull-right[
-### Output
+### `r icon::fa("file-alt")` Output
 ```{r results = "hold"}
 1 + 1
 2 + 2
 ```
 ]
 
-
-<br>
-
-- Hold all results in a code chunk and display them at the end. 
+- Hold all results in a code chunk and display them at the end.
 
 ---
 
-# Chunk options
-
-## results
+# Chunk option `results`
 
 .pull-left[
-### Syntax
+### `r icon::fa("code")` Syntax
 ````md
 ```{r results = "hide"}`r ''`
 1 + 1
-ggplot(data = iris, 
-       aes(x = Petal.Length, 
+ggplot(data = iris,
+       aes(x = Petal.Length,
            y = Petal.Width)) +
   geom_point()
 ```
 ````
-
-<br>
 
 - Hide results but not plots
 
 ]
 
 .pull-right[
-### Output
+### `r icon::fa("file-alt")` Output
 ```{r results = "hide", fig.height=3.5, fig.width=4, fig.retina=3, fig.align='center'}
 1 + 1
 ggplot(data = iris,
-       aes(x = Petal.Length, 
+       aes(x = Petal.Length,
            y = Petal.Width)) +
   geom_point()
 ```
 ]
 
-
-
-
 ---
 
-# Chunk options
 
-## fig.height & fig.width
-
+# Chunk options `fig.height` & `fig.width`
 .pull-left[
-### Syntax
+### `r icon::fa("code")` Syntax
 ````md
-```{r fig.height = 3, fig.width = 5, echo = FALSE}`r ''`
-ggplot(data = iris, 
-       aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+```{r fig.height = 3,
+      fig.width = 5,
+      echo = FALSE}`r ''`
+ggplot(data = iris,
+       aes( x = Sepal.Length,
+            y = Sepal.Width,
+            color = Species)) +
   geom_point()
 ```
 ````
@@ -774,17 +832,15 @@ ggplot(data = iris,
 
 
 .pull-right[
-### Output
-```{r fig.height = 3, fig.width = 5, echo = FALSE, dpi = 300}
-ggplot(data = iris, 
-       aes(x = Sepal.Length, 
-           y = Sepal.Width, 
+### `r icon::fa("file-alt")` Output
+```{r fig.height = 3,fig.width = 5,echo = FALSE,dpi = 300}
+ggplot(data = iris,
+       aes(x = Sepal.Length,
+           y = Sepal.Width,
            color = Species)) +
   geom_point()
 ```
 ]
-
-<br>
 
 - width and height of the plot in inches
 - Note that options are separated by commas
@@ -794,12 +850,12 @@ ggplot(data = iris,
 
 ### What output each option suppresses?
 
-Option             | Run code | Show code | Output | Plots | Messages | Warnings 
+Option             | Run code | Show code | Output | Plots | Messages | Warnings
 -------------------|:--------:|:---------:|:------:|:-----:|:--------:|:-------:
 `eval = FALSE`     |`r icon::fa("times")`|         |`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`
-`include = FALSE`  | |`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")` 
-`echo = FALSE`     |  |`r icon::fa("times")`|     |    |      |     
-`results = "hide"` |        |        |`r icon::fa("times")`|     |        | 
+`include = FALSE`  | |`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`|`r icon::fa("times")`
+`echo = FALSE`     |  |`r icon::fa("times")`|     |    |      |
+`results = "hide"` |        |        |`r icon::fa("times")`|     |        |
 `fig.show = "hide"`|        |       |     | `r icon::fa("times")`|      |
 `message = FALSE`  |          |           |        |       |`r icon::fa("times")`|
 `warning = FALSE`  |          |           |        |       |          |`r icon::fa("times")`
@@ -816,9 +872,9 @@ You can change the default chunk options for all following chunks in your docume
 ````md
 ```{r include = FALSE}`r ''`
 knitr::opts_chunk$set(
-  collapse = TRUE, 
+  collapse = TRUE,
   cache = TRUE,
-  comment = "#>", 
+  comment = "#>",
   fig.width = 6,
   fig.align = "center"
 )
@@ -829,15 +885,55 @@ knitr::opts_chunk$set(
 
 
 
-# Exercice
+# `r icon::fa("gamepad")` Exercice
 
-**TODO**: Play with `echo` & `eval` and others
+## Let's practice !
 
+0. Open a new `.Rmd` document
+1. Run `data(diamonds)` within a chunk
+2. Add the following text and fill it with inline code: `
+We have data about XXXX diamonds. Only
+XXXX are larger than 2.5 carats.
+`
 
+3. Display all diamonds larger than 2.5 carats with the function `DT::datatable()`.
+4. Make an histogram of the carats. The figure should have an height and width of 4 inches.
 
 ```{r, echo=FALSE}
-countdown::countdown(minutes = 5, seconds = 0)
+countdown::countdown(minutes = 10, seconds = 0)
 ```
+
+???
+
+
+Solution:
+````md
+---
+title: "Diamond sizes"
+date: 2016-08-25
+output: html_document
+---
+
+```{r setup, include = FALSE}
+library(ggplot2)
+library(dplyr)
+
+smaller <- diamonds %>%
+  filter(carat <= 2.5)
+```
+
+We have data about `r nrow(diamonds)` diamonds. Only
+`r nrow(diamonds) - nrow(smaller)` are larger than
+2.5 carats.
+
+```{r, echo = FALSE, fig.height=4, fig.width=4}
+DT::datatable(smaller)
+```
+
+```{r, echo = FALSE, fig.height=4, fig.width=4}
+hist(diamonds$carat)
+```
+````
 
 ---
 
@@ -860,9 +956,22 @@ countdown::countdown(minutes = 5, seconds = 0)
 ---
 class: inverse, center, middle
 
-# `r icon::fa("rocket")` Slides
+# `r icon::fa("rocket")` Deploy `rmarkdown` HTML
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
+
+---
+
+# RStudio project
+
+1. 
+
+---
+class: inverse, center, middle
+
+# `r icon::fa("rocket")` Building a presentation
+
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 
 ---
@@ -874,9 +983,7 @@ class: inverse, center, middle
   - for conference
 
 2. Use Markdown to quickly format your content
-
 3. Insert code examples `r icon::fa("cogs")`
-
 4. Insert your R figures `r icon::fa("chart-bar")`
 
 
@@ -923,7 +1030,7 @@ output: ioslides_presentation
 ```
 
 ---
-# ioslides 🧶 
+# ioslides 🧶
 
 - knit to create the HTML presentation!
 
@@ -948,7 +1055,7 @@ output: ioslides_presentation
 - create new slides by using `#` or `##`
 
 ```md
-# Section slide | with background image 
+# Section slide | with background image
 {data-background=bg_mountain.jpg data-background-size=cover}
 ```
 
@@ -1016,7 +1123,7 @@ plot(dist ~ speed, data = cars)
 title: "My beautiful ioslide presentation"
 author: "John Doe"
 date: '2019-10-02'
-output: 
+output:
   ioslides_presentation:
     logo: insilecoLogo.png
 ---
@@ -1030,9 +1137,9 @@ output:
 ---
 # ioslides - options
 
-Customize: 
+Customize:
 - presentation size using `widesreen`
-- speed of slide transitions using `transition` 
+- speed of slide transitions using `transition`
 - incremental bullets using `incremental`
 - text size using `smaller`
 
@@ -1041,7 +1148,7 @@ Customize:
 title: "My beautiful ioslide presentation"
 author: "John Doe"
 date: '2019-10-02'
-output: 
+output:
   ioslides_presentation:
     widescreen: true
     transition: slower
@@ -1060,7 +1167,7 @@ output:
 title: "My beautiful ioslide presentation"
 author: "John Doe"
 date: '2019-10-02'
-output: 
+output:
   ioslides_presentation:
     css: mystyles.css
     template: mytemplate.html
@@ -1169,7 +1276,7 @@ class: inverse, center, middle
 
 # `r icon::fa("rocket")` Blogdown
 
-<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html> 
+<html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
 
 ---
@@ -1278,4 +1385,3 @@ src="https://bookdown.org/yihui/bookdown/get-started.html">
 
 - Github repository: https://github.com/rstudio/bookdown
 - Bookdown book: https://bookdown.org/yihui/bookdown/
-
