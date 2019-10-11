@@ -889,55 +889,25 @@ knitr::opts_chunk$set(
 
 ## Let's practice !
 
-0. Open a new `.Rmd` document
-1. Run `data(diamonds)` within a chunk
-2. Add the following text and fill it with inline code: `
+1. Open a new `.Rmd` document and run `data(diamonds)` within a chunk
+2. Add the following text and fill it: `
 We have data about XXXX diamonds. Only
 XXXX are larger than 2.5 carats.
 `
 
 3. Display all diamonds larger than 2.5 carats with the function `DT::datatable()`.
 4. Make an histogram of the carats. The figure should have an height and width of 4 inches.
+5. `DT::datatable()` doesn't work with PDF or Word document, why?
 
 ```{r, echo=FALSE}
-countdown::countdown(minutes = 10, seconds = 0)
+countdown::countdown(minutes = 12, seconds = 0)
 ```
 
-???
-
-
-Solution:
-````md
----
-title: "Diamond sizes"
-date: 2016-08-25
-output: html_document
----
-
-```{r setup, include = FALSE}
-library(ggplot2)
-library(dplyr)
-
-smaller <- diamonds %>%
-  filter(carat <= 2.5)
-```
-
-We have data about `r nrow(diamonds)` diamonds. Only
-`r nrow(diamonds) - nrow(smaller)` are larger than
-2.5 carats.
-
-```{r, echo = FALSE, fig.height=4, fig.width=4}
-DT::datatable(smaller)
-```
-
-```{r, echo = FALSE, fig.height=4, fig.width=4}
-hist(diamonds$carat)
-```
-````
 
 ---
 
-# Take home
+
+# Wraping up
 
 ✔️ **Document your document**: use YAML to set up meaningful metadata
 
@@ -954,17 +924,50 @@ hist(diamonds$carat)
 🧶 early, 🧶 often
 
 ---
+
+# Why using it?
+
+`r icon::fa("arrow-circle-right")` Multiplateform | Portable | Reproducible
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/rmarkdownflow.png")
+```
+
+--
+
+`r icon::fa("arrow-circle-right")` Impress your director | Turn into a geek | Expose your skills on the web 
+
+---
 class: inverse, center, middle
 
-# `r icon::fa("rocket")` Deploy `rmarkdown` HTML
+# `r icon::fa("rocket")` Launch document on the web
 
 <html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
+
 ---
 
-# RStudio project
+# `r icon::fa("rocket")` Launch document on the web
 
-1. 
+## Mission
+
+Send an HTML output on Github
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/rmarkdownflow_withSel_github.png")
+```
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+## 4 steps 
+
+1. Open new repository
+2. Create a new RStudio project
+3. Connect the RStudio project to Github
+4. Send HTML files on the Github repository with RStudio
+
 
 ---
 class: inverse, center, middle
@@ -979,9 +982,6 @@ class: inverse, center, middle
 # Motivation
 
 1. Create a presentation `r icon::fa("microphone")`
-  - for a tutorial
-  - for conference
-
 2. Use Markdown to quickly format your content
 3. Insert code examples `r icon::fa("cogs")`
 4. Insert your R figures `r icon::fa("chart-bar")`
@@ -990,7 +990,7 @@ class: inverse, center, middle
 ---
 # Create a Rmarkdown presentation
 
-Simple options in R Studio
+## Templates in R Studio
 
 - [ioslides](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html)
 - [slidy](https://bookdown.org/yihui/rmarkdown/slidy-presentation.html)
