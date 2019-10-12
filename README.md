@@ -1,6 +1,6 @@
 # Touchdown your research with `rmarkdown`
 
-### [Access to the online presentation](https://insileco.github.io/ResearchDown/#1)
+### [Access the online presentation](https://insileco.github.io/ResearchDown/#1)
 (2 hours)
 
 ### Abstract | Résumé

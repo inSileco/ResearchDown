@@ -1030,6 +1030,18 @@ knitr::include_graphics("assets/img/config.png")
 knitr::include_graphics("assets/img/gh-pages.png")
 ```
 
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 1b. Activate Github page
+
+Several options
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/gh-pages_options.png")
+```
+
 
 ---
 
@@ -1104,6 +1116,20 @@ Wait few minutes and see the result at [https://YOURUSERNAME.github.io/firstOnli
 knitr::include_graphics("assets/img/ironcat.jpg")
 ```
 
+
+
+---
+
+# `r icon::fa("book")` The `down` universe
+
+- Write a notebook: `bookdown`
+- Write a thesis: `thesisdown`
+- Write a scientific article `rticles`
+- Create a poster: `posterdown`
+- Create nice presentation: `xaringan` or `rmarkdown`
+- Build a CV: `vitae`
+- Generate a blog: `blogdown`
+- Generate R package documentation: `pkgdown`
 
 ---
 class: inverse, center, middle
@@ -1408,7 +1434,7 @@ The end!
 
 class: inverse, center, middle
 
-# `r icon::fa("rocket")` Bookdown
+# `r icon::fa("rocket")` Create a notebook
 
 <html><div style='float:left'></div><hr color='#ffdd55' style="margin-top: -60px;" size=1px width=720px></html>
 
@@ -1433,6 +1459,14 @@ class: inverse, center, middle
 knitr::include_graphics('https://bookdown.org/yihui/bookdown/images/logo.png')
 ```
 ]
+
+---
+
+# With Rstudio project
+
+```{r echo=FALSE, out.height="80%", fig.align = 'center'}
+knitr::include_graphics("assets/img/bookdown_project.png")
+```
 
 ---
 
