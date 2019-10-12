@@ -985,7 +985,7 @@ knitr::include_graphics("assets/img/rmarkdownflow_withSel_github.png")
 
 ### 5 steps 
 
-1. Open new GitHub repository
+1. Open new GitHub repository and activate Github page
 2. Link this new repo to a RStudio project
 3. Add a `.Rmd` document and generate the HTML document (we know that part!)
 4. Declare (`add`) and document (`commit`) the modifications on the repository
@@ -999,7 +999,7 @@ knitr::include_graphics("assets/img/rmarkdownflow_withSel_github.png")
 
 # `r icon::fa("rocket")` Launch document on the web
 
-### 1. Open a new GitHub repository
+### 1a. Open a new GitHub repository
 
 ```{r echo=FALSE, out.width="100%"}
 knitr::include_graphics("assets/img/createRepo.png")
@@ -1008,7 +1008,28 @@ knitr::include_graphics("assets/img/createRepo.png")
 --
 
 - Name it as `firstOnlineDocument`
-- Let the repository public
+- Let's make the repository public
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 1b. Activate Github page
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/config.png")
+```
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 1b. Activate Github page
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("assets/img/gh-pages.png")
+```
+
 
 ---
 
@@ -1025,6 +1046,7 @@ knitr::include_graphics("assets/img/createProject.png")
 - Fill the field `Repository URL` with the URL address of your repo **and add `.git` at the end**
 - Exemple: `https://github.com/SteveViss/firstOnlineDocument.git`
 
+
 ---
 
 # `r icon::fa("rocket")` Launch document on the web
@@ -1034,6 +1056,7 @@ knitr::include_graphics("assets/img/createProject.png")
 - You know that part, so let's do it.
 - We want to create a `.Rmd` and produces a `.html` file in the RStudio project folder.
 - `r icon::fa("exclamation-triangle")` with the following filenames: `index.html` & `index.Rmd`
+- Make sure you save the files within the project folder
 
 ```{r, echo=FALSE}
 countdown::countdown(minutes = 5, seconds = 0)
@@ -1045,12 +1068,41 @@ countdown::countdown(minutes = 5, seconds = 0)
 
 ### 4. Declare (`add`) and document (`commit`) the modifications on the repository
 
+```{r echo=FALSE, out.width="100%", fig.align = 'center'}
+knitr::include_graphics("assets/img/git1.png")
+```
+
 ---
 
 # `r icon::fa("rocket")` Launch document on the web
 
-### 5. Send these modifications with the HTML output on Github via RStudio
+### 4. Declare (`add`) and document (`commit`) the modifications on the repository
 
+```{r echo=FALSE, out.height="80%", fig.align = 'center'}
+knitr::include_graphics("assets/img/git2.png")
+```
+
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+### 5. Last step, send these modifications on the Github repo via RStudio
+
+```{r echo=FALSE, out.height="80%", fig.align = 'center'}
+knitr::include_graphics("assets/img/git3.png")
+```
+
+
+---
+
+# `r icon::fa("rocket")` Launch document on the web
+
+Wait few minutes and see the result at [https://YOURUSERNAME.github.io/firstOnlineDocument/](https://YOURUSERNAME.github.io/firstOnlineDocument/)
+
+```{r echo=FALSE, out.height="40%", fig.align = 'center'}
+knitr::include_graphics("assets/img/ironcat.jpg")
+```
 
 
 ---
@@ -1461,3 +1513,17 @@ src="https://bookdown.org/yihui/bookdown/get-started.html">
 
 - Github repository: https://github.com/rstudio/bookdown
 - Bookdown book: https://bookdown.org/yihui/bookdown/
+
+
+---
+
+# `r icon::fa("book")` The `down` universe
+
+- Write a notebook: `bookdown`
+- Write a thesis: `thesisdown`
+- Write a scientific article `rticles`
+- Create a poster: `posterdown`
+- Create nice presentation: `xaringan` or `rmarkdown`
+- Build a CV: `vitae`
+- Generate a blog: `blogdown`
+- Generate R package documentation: `pkgdown`
