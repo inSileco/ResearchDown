@@ -1100,7 +1100,7 @@ knitr::include_graphics("assets/img/git3.png")
 
 Wait few minutes and see the result at [https://YOURUSERNAME.github.io/firstOnlineDocument/](https://YOURUSERNAME.github.io/firstOnlineDocument/)
 
-```{r echo=FALSE, out.height="40%", fig.align = 'center'}
+```{r echo=FALSE, out.width="35%", fig.align = 'center'}
 knitr::include_graphics("assets/img/ironcat.jpg")
 ```
 
